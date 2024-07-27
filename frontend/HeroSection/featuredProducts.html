@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Featured Products</title>
+      <link rel="stylesheet" href="featuredProducts.css">
+</head>
+
+<body>
+      <section id="featured-products" class="featured-products">
+            <h2 class="featured-heading">Featured Products
+                  <hr class="heading-hr" />
+            </h2>
+            <div class="product-cards">
+                  <div class="product-card">
+                        <img src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/86/5227552/1.jpg?8089"
+                              alt="Head Phones" class="product-image" />
+                        <div class="product-info">
+                              <h3 class="product-name">Head Phones</h3>
+                              <div class="product-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                              </div>
+                              <p class="product-price">$49.99</p>
+                              <a href="#" class="product-btn">Buy Now</a>
+                        </div>
+                  </div>
+                  <div class="product-card">
+                        <img src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/86/5227552/1.jpg?8089"
+                              alt="Smart Watch" class="product-image" />
+                        <div class="product-info">
+                              <h3 class="product-name">Smart Watch</h3>
+                              <div class="product-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                              </div>
+                              <p class="product-price">$59.99</p>
+                              <a href="#" class="product-btn">Buy Now</a>
+                        </div>
+                  </div>
+                  <div class="product-card">
+                        <img src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/86/5227552/1.jpg?8089"
+                              alt="Laptops" class="product-image" />
+                        <div class="product-info">
+                              <h3 class="product-name">Laptops</h3>
+                              <div class="product-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                              </div>
+                              <p class="product-price">$69.99</p>
+                              <a href="#" class="product-btn">Buy Now</a>
+                        </div>
+                  </div>
+                  <div class="product-card">
+                        <img src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/86/5227552/1.jpg?8089"
+                              alt="Laptops" class="product-image" />
+                        <div class="product-info">
+                              <h3 class="product-name">Laptops</h3>
+                              <div class="product-rating">
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star filled">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                              </div>
+                              <p class="product-price">$69.99</p>
+                              <a href="#" class="product-btn">Buy Now</a>
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <script>
+            // JavaScript to render stars dynamically
+            document.querySelectorAll('.product-rating').forEach(ratingElement => {
+                  const rating = ratingElement.querySelectorAll('.star.filled').length;
+                  ratingElement.innerHTML = Array.from({ length: 5 }, (_, index) => `
+                <span class="star ${index < rating ? 'filled' : ''}">&#9733;</span>
+            `).join('');
+            });
+      </script>
+</body>
+
+</html>
